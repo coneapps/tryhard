@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Created by aliihsan.
@@ -9,20 +10,16 @@ using UnityEngine;
 //TODO:Introda bir süre bekle ve beklerken iconu saat yönünde döndür...
 
 public class Introduction : MonoBehaviour {
-
 	void Start () {
-		waitSeconds ();
-		Application.LoadLevel ("menu");
+        StartCoroutine(waitSeconds());
 	}
 
 	void Update () {
 		
 	}
 
-	public void waitSeconds(){
-
-
+	IEnumerator waitSeconds(){
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("menu");
 	}
-
-
 }
