@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +8,7 @@ using UnityEngine;
 
 //TODO:Burası levelleri başlatıp sonlandıran arayüz.Sadece level geçişleri için kullanılmalı!, level geçişlerini yaz.
 
-public class SceneManager : MonoBehaviour {
+public class SceneLoader : MonoBehaviour {
 
 	level1 lvl1 = new level1 ();
 
