@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Created by aliihsan.
@@ -9,7 +10,6 @@ using UnityEngine;
 //TODO:Gerekli arayüzü ekrana çizdir.
 
 public class HowToPlay : MonoBehaviour {
-
 	void Start () {
 		
 	}
@@ -17,4 +17,9 @@ public class HowToPlay : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void goBack()
+    {
+        SceneManager.LoadScene("menu");
+    }
 }
