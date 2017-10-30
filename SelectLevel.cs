@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Created by aliihsan.
@@ -19,7 +20,7 @@ public class SelectLevel : MonoBehaviour {
 		
 	}
 
-	public void loadLevel(int level){
-		Application.LoadLevel ("");  //Send level info
+	public void loadLevel(string level){
+		SceneManager.LoadScene("");  //Send level info
 	}
 }
