@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Created by aliihsan.
@@ -17,4 +18,9 @@ public class Statistics : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void goBack()
+    {
+        SceneManager.LoadScene("menu");
+    }
 }
