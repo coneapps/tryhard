@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Created by aliihsan.
@@ -9,8 +10,10 @@ using UnityEngine;
 //TODO:btn... methodlarını doldur, başlangıçta butonları ekrana çizdir ve eventlarını yaz.
 
 public class Menu : MonoBehaviour {
-
-
+    public void Authenticate()
+    {
+        // Sign in / out
+    }
 	void Start () {
 		
 	}
@@ -21,16 +24,14 @@ public class Menu : MonoBehaviour {
 		
 	public void OnGUI(){
 
-
 	}
 
 	public void btnPlay(){
-		Application.LoadLevel ("SelectCategory");
+		SceneManager.LoadScene("SelectCategory");
 	}
 
 	public void btnHow2Play(){
-		Application.LoadLevel ("HowToPlay");
-
+		SceneManager.LoadScene("HowToPlay");
 	}
 
 	public void btnAchievements(){
@@ -39,16 +40,13 @@ public class Menu : MonoBehaviour {
 
 	public void btnLeaderBoards(){
 
-
 	}
 
 	public void btnStatistics(){
-		Application.LoadLevel ("Statistics");
+		SceneManager.LoadScene("Statistics");
 	}
 
 	public void btnExit(){
 		Application.Quit ();
 	}
-
-
 }
