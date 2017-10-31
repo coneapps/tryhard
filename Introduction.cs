@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 
 public class Introduction : MonoBehaviour {
 	void Start () {
+	//wait method
         StartCoroutine(waitSeconds());
 	}
 
