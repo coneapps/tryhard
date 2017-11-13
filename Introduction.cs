@@ -7,11 +7,10 @@ using UnityEngine.SceneManagement;
 /// Created by aliihsan.
 /// </summary>
 
-//TODO:Introda bir süre bekle ve beklerken iconu saat yönünde döndür...
+//TODO:Introda bir süre bekle ve beklerken iconu döndür...
 
 public class Introduction : MonoBehaviour {
 	void Start () {
-	//wait method
         StartCoroutine(waitSeconds());
 	}
 
@@ -20,7 +19,7 @@ public class Introduction : MonoBehaviour {
 	}
 
 	IEnumerator waitSeconds(){
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene("menu");
 	}
 }
