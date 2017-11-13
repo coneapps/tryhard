@@ -20,8 +20,7 @@ public class GameScene : MonoBehaviour {
 
 	public void OnGUI(){
 
-		GUI.Box (new Rect(0,0,100,30),"sadasd");
-
+	
 	}
 
 
