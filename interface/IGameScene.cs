@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,9 +6,17 @@ using UnityEngine;
 /// Created by aliihsan.
 /// </summary>
 
-//TODO:Tüm gameScene'lerde olması gereken fonksiyonların kontratlarını yaz.
-
 public interface IGameScene {
+	void Start ();
 
+	void Update ();
+
+	void OnGUI ();
+
+	void setInfoUI ();
+
+	void setEndUI ();
+
+	void nextButtonClicked();
 
 }
