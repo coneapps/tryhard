@@ -8,4 +8,15 @@ public class back : MonoBehaviour {
     {
         SceneManager.LoadScene("selectCategory");
     }
+
+    public void retry()
+    {
+        SceneManager.LoadScene("gameScene");
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            goBack();
+    }
 }
