@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -52,12 +52,12 @@ public class SceneLoader : MonoBehaviour {
 		case 2:
 			gameScene = new Tapping (this);
 			break;
-		case 3:
-			gameScene = new Word (this);
-			break;
-		case 4:
-			gameScene = new Visual (this);
-			break;
+        case 3:
+            wordMemoryLevels[0].SetActive(true);
+            break;
+        case 4:
+            visualMemoryLevels[0].SetActive(true);
+            break;
 		}
 
 		if (gameScene != null) {
@@ -84,6 +84,7 @@ public class SceneLoader : MonoBehaviour {
 	#region Sends data to gameScene class(tapping)
 	public void increaseTouchCounter(){
 		(gameScene as Tapping).touchCounter++;
+        (gameScene as Tapping).buttonPosition = (int)Random.Range(0, 5);
 	}
 
 
@@ -107,19 +108,19 @@ public class SceneLoader : MonoBehaviour {
 
 	#region Score Management methods
 	public void addIntelligenceScore(int score){
-		iScore += score;
+		iScore = score;
 	}
 	public void addTappingScore(int score){
 		tappScore += score;
 	}
 	public void addTypingScore(int score){
-		typeScore += score;
+		typeScore = score;
 	}
 	public void addWordScore(int score){
-		wordScore += score;
+		wordScore = score;
 	}
 	public void addVisualScore(int score){
-		visualScore += score;
+		visualScore = score;
 	}
 
 	public void saveScores(){
