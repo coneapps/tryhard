@@ -83,7 +83,7 @@ public class Menu : MonoBehaviour {
     {
 		if (!settingsButtons.activeSelf)
 			settingsButtons.SetActive (true);
-        else 
+        	else 
 			settingsButtons.SetActive (false);
 	}
 
