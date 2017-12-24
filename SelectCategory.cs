@@ -35,7 +35,6 @@ public class SelectCategory : MonoBehaviour {
         Initiate.Fade("gameScene", Color.black, 3.5f);
     }
 
-
     public void goBack()
     {
         Initiate.Fade("menu", Color.black, 3.5f);
