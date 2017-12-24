@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class back : MonoBehaviour {
     public void goBack()
     {
-        SceneManager.LoadScene("selectCategory");
+        Initiate.Fade("selectCategory", Color.black, 3.5f);
     }
 
     public void retry()
     {
-        SceneManager.LoadScene("gameScene");
+        Initiate.Fade("gameScene", Color.black, 3.5f);
     }
 
     void Update()

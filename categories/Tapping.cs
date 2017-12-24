@@ -89,16 +89,12 @@ public class Tapping : MonoBehaviour, IGameScene
     {
         GameObject infoText = GameObject.FindGameObjectsWithTag("infoMessage")[0];
         infoText.GetComponent<Text>().text = Lang.getString("tappingInfo" + (level + 1));
-
-        //GameObject descriptionText = GameObject.FindGameObjectsWithTag("infoOK")[0];
-        //descriptionText.GetComponent<Text>().text = Lang.getString("infoOK");
     }
     public void setEndUI()
     {
         GameObject infoText = GameObject.FindGameObjectsWithTag("score")[0];
         GameObject btnRetry = GameObject.FindGameObjectWithTag("retry");
         infoText.GetComponent<Text>().text = Lang.getString("pointsEarned") + ": " + touchCounter;
-        //btnRetry.GetComponentInChildren<Text>().text = Lang.getString("retry");
         if (gpgs.isSigned())
         {
             if (touchCounter > 25)

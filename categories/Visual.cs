@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Visual : MonoBehaviour, IGameScene
@@ -53,7 +52,6 @@ public class Visual : MonoBehaviour, IGameScene
             GameObject infoTxt = GameObject.FindGameObjectWithTag("infoMessage");
             infoTxt.GetComponent<Text>().text = Lang.getString("visualText10");
             GameObject startButton = GameObject.FindGameObjectWithTag("startButton");
-            //startButton.GetComponentInChildren<Text>().text = Lang.getString("okText");
             startButton.GetComponent<Button>().onClick.AddListener(() =>
             {
                 levels[0].SetActive(false);
@@ -118,7 +116,6 @@ public class Visual : MonoBehaviour, IGameScene
             levels[3].SetActive(true);
             int score = (correctAnswers * 50 + 750);
             scoreText.GetComponent<Text>().text = Lang.getString("pointText1") + score + Lang.getString("pointText2");
-            //retryBtn.GetComponentInChildren<Text>().text = Lang.getString("retry");
             sceneLoader.GetComponent<SceneLoader>().addVisualScore(score);
             sceneLoader.GetComponent<SceneLoader>().saveScores();
             if (gpgs.isSigned())
@@ -748,9 +745,10 @@ public class Visual : MonoBehaviour, IGameScene
     }
     public void nextButtonClicked()
     {
-        //TODO:Info ekranını disable et, ilgili lvl ui'ini aktif et ve level değişkenini 1 arttır.
+        
     }
     public void OnGUI()
     {
+
     }
 }

@@ -123,7 +123,6 @@ public class Intelligence : MonoBehaviour, IGameScene {
                     gpgs.unlockAchivement("CgkIm6CK7OEHEAIQBw");
                 gpgs.postScore(score, "CgkIm6CK7OEHEAIQAQ");
             }
-            //retryButton.GetComponentInChildren<Text>().text = Lang.getString("retry");
             retryButton.SetActive(true);
         }
     }
@@ -171,6 +170,7 @@ public class Intelligence : MonoBehaviour, IGameScene {
         {
             uiComponents.SetActive(false);
             message.GetComponent<Text>().text = Lang.getString("timeUp");
+            retryButton.SetActive(true);
             CancelInvoke();
         }
     }

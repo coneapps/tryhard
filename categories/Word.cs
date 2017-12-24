@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Word : MonoBehaviour, IGameScene
@@ -108,7 +107,6 @@ public class Word : MonoBehaviour, IGameScene
             levels[2].SetActive(false);
             levels[3].SetActive(false);
             wordInfoTxt.GetComponent<Text>().text = Lang.getString("wordInfo");
-            //startButton.GetComponentInChildren<Text>().text = Lang.getString("okText");
             startButton.GetComponent<Button>().onClick.AddListener(() =>
             {
                 levels[0].SetActive(false);
@@ -160,12 +158,11 @@ public class Word : MonoBehaviour, IGameScene
             GameObject retryBtn = GameObject.FindGameObjectWithTag("retry");
             int score = (correctAnswers / 2 * 50) + 200;
             scoreText.GetComponent<Text>().text = Lang.getString("pointText1") + score + Lang.getString("pointText2");
-            //retryBtn.GetComponentInChildren<Text>().text = Lang.getString("retry");
             sceneLoader.GetComponent<SceneLoader>().addWordScore(score);
             sceneLoader.GetComponent<SceneLoader>().saveScores();
             if (gpgs.isSigned())
             {
-                if (wrongWord == true)
+                if (wrongWord == false)
                     gpgs.unlockAchivement("CgkIm6CK7OEHEAIQFA");
                 if (score == 500)
                     gpgs.unlockAchivement("CgkIm6CK7OEHEAIQFQ");
@@ -263,9 +260,6 @@ public class Word : MonoBehaviour, IGameScene
         }
     }
 
-
-
-
     public void Start()
     {
 
@@ -283,25 +277,18 @@ public class Word : MonoBehaviour, IGameScene
     }
     public void setInfoUI()
     {
-        //TODO:İlgili verileri array'den çek ve text yerlerine bas.
-        //GameObject infoText = GameObject.FindGameObjectsWithTag("infoMessage")[0];
-        //infoText.GetComponent<Text>().text = sceneLoader.wordInfos[0];
+        
     }
     public void setEndUI()
     {
-        // GameObject infoText = GameObject.FindGameObjectsWithTag("score")[0];
-        // infoText.GetComponent<Text>().text = "You gained " + correctAnswer + " points!";
+        
     }
     public void nextButtonClicked()
     {
-        //TODO:Info ekranını disable et, ilgili lvl ui'ini aktif et ve level değişkenini 1 arttır.
+        
     }
     public void OnGUI()
     {
-
-
-
-
 
     }
 }

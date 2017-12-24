@@ -40,7 +40,6 @@ public class Typing : MonoBehaviour, IGameScene
     public void Start()
     {
 
-
     }
 
     public void addLetter(string c)
@@ -163,6 +162,7 @@ public class Typing : MonoBehaviour, IGameScene
 
             GameObject descriptionText = GameObject.FindGameObjectsWithTag("typingDescription")[0];
             descriptionText.GetComponent<Text>().text = Lang.getString("description") + ":";
+
             //Levelin başlangıcında wordList doldurulur!
             if (!arrayUpdated)
             {
@@ -177,12 +177,6 @@ public class Typing : MonoBehaviour, IGameScene
     {
         GameObject infoText = GameObject.FindGameObjectsWithTag("infoMessage")[0];
         infoText.GetComponent<Text>().text = Lang.getString("typingInfo" + (level + 1)); ;
-
-
-        //GameObject descriptionText = GameObject.FindGameObjectsWithTag("infoOK")[0];
-        //descriptionText.GetComponent<Text>().text = Lang.getString("infoOK");
-
-
     }
     public void setEndUI()
     {
@@ -191,14 +185,13 @@ public class Typing : MonoBehaviour, IGameScene
         int score = wordCounter * lettercounter;
         sceneLoader.addTypingScore(score);
         infoText.GetComponent<Text>().text = Lang.getString("youGained") + ": " + score;
-        //btnRetry.GetComponentInChildren<Text>().text = Lang.getString("retry");
         if (gpgs.isSigned())
         {
             if (score > 1000)
                 gpgs.unlockAchivement("CgkIm6CK7OEHEAIQCQ");
             if (score > 2000)
                 gpgs.unlockAchivement("CgkIm6CK7OEHEAIQCg");
-            if (score > 3000)
+            if (score > 5000)
                 gpgs.unlockAchivement("CgkIm6CK7OEHEAIQCw");
             gpgs.postScore(score, "CgkIm6CK7OEHEAIQCA");
         }
@@ -206,7 +199,6 @@ public class Typing : MonoBehaviour, IGameScene
 
     public void nextButtonClicked()
     {
-
         sceneLoader.infoUI.SetActive(false);
         sceneLoader.typingLevels[level].SetActive(true);
 
@@ -218,7 +210,6 @@ public class Typing : MonoBehaviour, IGameScene
 
     public void OnGUI()
     {
-
 
     }
 }
