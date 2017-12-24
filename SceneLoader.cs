@@ -12,7 +12,6 @@ public class SceneLoader : MonoBehaviour {
 
 	public static int catId = -1;  //Default = -1 for null value
 
-
 	public string[] intelligenceInfos;
 	public string[] tappingInfos;
 	public string[] typingInfos;
@@ -77,8 +76,6 @@ public class SceneLoader : MonoBehaviour {
 		if (gameScene != null) {
 			gameScene.OnGUI ();
 		}
-
-
 	}
 
 	#region Sends data to gameScene class(tapping)
@@ -147,5 +144,4 @@ public class SceneLoader : MonoBehaviour {
 		}
 	}
 	#endregion
-
 }

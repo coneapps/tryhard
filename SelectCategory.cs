@@ -32,13 +32,13 @@ public class SelectCategory : MonoBehaviour {
 	public void loadGameScene(int num)
     {
 		SceneLoader.catId = num;
-        SceneManager.LoadScene("gameScene");
+        Initiate.Fade("gameScene", Color.black, 3.5f);
     }
 
 
     public void goBack()
     {
-		SceneManager.LoadScene("menu");
+        Initiate.Fade("menu", Color.black, 3.5f);
     }
 
 }

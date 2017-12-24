@@ -45,6 +45,6 @@ public class Statistics : MonoBehaviour {
 
     public void goBack()
     {
-        SceneManager.LoadScene("menu");
+        Initiate.Fade("menu", Color.black, 3.5f);
     }
 }

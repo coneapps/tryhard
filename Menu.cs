@@ -21,19 +21,10 @@ public class Menu : MonoBehaviour {
     public GameObject eng;
     public GameObject muted;
     public GameObject unmuted;
+    GameObject audio;
 
     public void Authenticate()
     {
-        if (gpgs.isSigned())
-        {
-            signed.SetActive(true);
-            unsigned.SetActive(false);
-        }
-        else
-        {
-            signed.SetActive(false);
-            unsigned.SetActive(true);
-        }
         gpgs.sign();
     }
 	void Start () {
@@ -46,23 +37,34 @@ public class Menu : MonoBehaviour {
             unsigned.SetActive(false);
         else
             signed.SetActive(false);
+        audio = GameObject.FindGameObjectWithTag("audio");
+        if (audio.GetComponent<AudioSource>().isPlaying)
+            muted.SetActive(false);
+        else
+            unmuted.SetActive(false);
 	}
 
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Escape))
             System.Diagnostics.Process.GetCurrentProcess().Kill();
-	}
-		
-	public void OnGUI(){
-
+        if (gpgs.isSigned())
+        {
+            signed.SetActive(true);
+            unsigned.SetActive(false);
+        }
+        else
+        {
+            signed.SetActive(false);
+            unsigned.SetActive(true);
+        }
 	}
 
 	public void btnPlay(){
-		SceneManager.LoadScene("selectCategory");
+        Initiate.Fade("selectCategory", Color.black, 3.5f);
 	}
 
 	public void btnHow2Play(){
-		SceneManager.LoadScene("howToPlay");
+        Initiate.Fade("howToPlay", Color.black, 3.5f);
 	}
 
 	public void btnAchievements(){
@@ -74,7 +76,7 @@ public class Menu : MonoBehaviour {
 	}
 
 	public void btnStatistics(){
-		SceneManager.LoadScene("statistics");
+        Initiate.Fade("statistics", Color.black, 3.5f);
 	}
 
     public void btnSettings()
@@ -103,6 +105,16 @@ public class Menu : MonoBehaviour {
 
     public void btnVolume()
     {
-
+        if (audio.GetComponent<AudioSource>().isPlaying) {
+            audio.GetComponent<AudioSource>().Stop();
+            muted.SetActive(true);
+            unmuted.SetActive(false);
+        } 
+        else 
+        {
+            audio.GetComponent<AudioSource>().Play();
+            muted.SetActive(false);
+            unmuted.SetActive(true);
+        }
     }
 }

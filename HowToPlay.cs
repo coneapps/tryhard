@@ -44,6 +44,6 @@ public class HowToPlay : MonoBehaviour {
 
     public void goBack()
     {
-        SceneManager.LoadScene("menu");
+        Initiate.Fade("menu", Color.black, 3.5f);
     }
 }
