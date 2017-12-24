@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languages>
+	
+	<Turkish>
+	  <string name="app_name">TryHard</string>
+		<string name="score_text">Skor</string>
+		<string name="timeMessage">Kalan zaman</string>
+		<string name="clickMessage">Basma sayısı</string>
+		<string name="youGained">Skor</string>
+		<string name="description">Kelime</string>
+		<string name="infoOK">Tamam</string>
+    <string name="retry">Tekrar oyna</string>
+		
+		<string name="tappingInfo1">Butona olabildiğince çok basın.</string>
+		<string name="typingInfo1">Kelimeleri doğru bir şekilde yazın.</string>
+		<string name="pointsEarned">Basma sayısı</string>
+    
+    <string name="intQ1">Sıradaki sayı hangisi olmalıdır ? 1, 2, 2, 3, 3, 3, 4, 4, .../4/1</string>
+    <string name="intQ2">Sıradaki sayı hangisi olmalıdır ? 4, 9, 16, 25, .../36/1</string>
+    <string name="intQ3">Sıradaki yazı hangisi olmalıdır ? AAAA, AAAB, AABA, AABB, .../BAAA ABBB ABAA ABAB BBAA ABAA/2</string>
+    <string name="intQ4">Sıradaki sayı hangisi olmalıdır ? 19, 23, 29, 31, .../37/1</string>
+    <string name="intQ5">Hangi hayvan diğerlerinden farklıdır ?/Kaplan Yılan Fil Kedi At Yılan/2</string>
+    <string name="intQ6">Sıradaki sembol hangisi olmalıdır ?/b/3/0,1,2,3,4</string>
+    <string name="intQ7">Aşağıdaki şekillerden hangisi küpü tamamlar ?/a/3/5,6,7,8,9</string>
+    <string name="intQ8">Sıradaki sayı hangisi olmalıdır ? 128, 512, 256, 1024, .../512/1</string>
+    <string name="intQ9">Hangi kelime diğerlerinden farklıdır ?/kazak makam neden dolap radar dolap/2</string>
+    <string name="intQ10">Aşağıdaki şekilde kaç tane harf vardır ?/10/1/10</string>
+    <string name="intQ11">Sıradaki resim hangisi olmalıdır ?/d/3/11,12,13,14,15</string>
+    <string name="intQ12">Bu bölümü en hızlı nasıl bitirirsin ?//1</string>
+    <string name="intQ13">Aşağıdaki resimde kaç tane üçgen vardır ?/21/1/16</string>
+    <string name="intQ14">İşlemi doğru hale getirmek için en az kaç kibrit çıkarılmalıdır ?/3/1/17</string>
+    <string name="intQ15">Verilen harflerle 8 harfli anlamlı bir kelime oluşturduğunuzda, bu kelime aslında nedir ? BAZİMKO/Hayvan Sebze Meyve Ülke Şehir Ülke/2</string>
+    <string name="intQ16">Aşağıdakilerden hangisi küpün kapanmış hali olabilir ?/c/3/23,24,25,26,27</string>
+    <string name="intQ17">Sıradaki resim hangisi olmalıdır ?/a/3/18,19,20,21,22</string>
+    <string name="intQ18">Eğer lahana = 582878 ve solucan = 4359187 ise, han + can kaçtır ?/474/1</string>
+    <string name="intQ19">Eğer 8086 = 6, 1228 = 2, 6233 = 1 ise, 7360 nedir ?/2/1</string>
+    <string name="intQ20">Aşağıdaki harf diziminde sıradaki harf hangisi olmalıdır ? A, Z, E, B , I, Y, O, .../B C Z I X C/2</string>
+    <string name="intQ21">none/none/none</string>
+    <string name="Qtype">Soru </string>
+    <string name="time">Kalan zaman: </string>
+    <string name="finalmsg">Bu kategoriyi bitirdiniz. Skorunuzu artırmak için tekrar oynayabilirsiniz. Skor: </string>
+    <string name="timeUp">Zaman doldu! Bütün sorulara verilen zaman içerisinde cevap vermelisiniz.</string>
+
+    <string name="cat1">Zeka testi</string>
+    <string name="cat2">Yazma testi</string>
+    <string name="cat3">Parmak basma</string>
+    <string name="cat4">Kelime hafızası</string>
+    <string name="cat5">Görsel hafıza</string>
+
+    <string name="line1">Yüksek Skorlar</string>
+    <string name="line2">Zeka testi: </string>
+    <string name="line3">Yazma testi: </string>
+    <string name="line4">Parmak basma: </string>
+    <string name="line5">Kelime hafızası: </string>
+    <string name="line6">Görsel hafıza: </string>
+
+    <string name="howto">Nasıl oynanır</string>
+    <string name="hwt1">Zeka testinde 20 soruya doğru cevap vermelisiniz. Süreniz 600 saniyedir.</string>
+    <string name="hwt2">Yazma testinde ekrana gelen kelimeleri doğru yazmanız gerekiyor. Süreniz 60 saniyedir.</string>
+    <string name="hwt3">Parmak basmada ekrana olabildiğince hızlı basmanız gerekiyor. Süreniz 30 saniyedir.</string>
+    <string name="hwt4">Görsel hafızada ekrana 5 farklı renk gelecektir. Bu renkleri sırasıyla ezberlemeniz gerekiyor.</string>
+    <string name="hwt5">Kelime hafızasında ekrana gelen kelimeleri ezberleyip sonrasında aynılarını tekrar seçmeniz gerekiyor.</string>
+
+    <string name="pointText1"></string>
+    <string name="pointText2"> puan kazandınız.</string>
+    <string name="visualText3">Soru 1: İlk daire hangi renkti ?</string>
+    <string name="visualText4">Soru 2: İkinci daire hangi renkti ?</string>
+    <string name="visualText5">Soru 3: Üçüncü daire hangi renkti ?</string>
+    <string name="visualText6">Soru 4: Dördüncü daire hangi renkti ?</string>
+    <string name="visualText7">Soru 5: Beşinci daire hangi renkti ?</string>
+    <string name="timeText1">Kalan zaman: </string>
+    <string name="visualText10">Tüm renkleri ezberlemeye çalışın.</string>
+    <string name="okText">Tamam</string>
+    <string name="wordInfo">Tüm kelimeleri ezberlemeye çalışın.</string>
+
+  </Turkish>
+	
+  <English>
+    <string name="app_name">TryHard</string>
+    <string name="score_text">Score</string>
+		<string name="timeMessage">Time left</string>
+		<string name="clickMessage">Tap count</string>
+		<string name="youGained">Score</string>
+		<string name="description">Your word</string>
+		<string name="infoOK">Ok</string>
+    <string name="retry">Retry</string>
+		 
+		<string name="tappingInfo1">Tap the button as much as you can.</string>
+		<string name="typingInfo1">Type the words correctly.</string>
+		<string name="pointsEarned">Tap count</string>
+      
+    <string name="intQ1">What should be the next number ? 1, 2, 2, 3, 3, 3, 4, 4, .../4/1</string>
+    <string name="intQ2">What should be the next number ? 4, 9, 16, 25, .../36/1</string>
+    <string name="intQ3">What should be the next text ? AAAA, AAAB, AABA, AABB, .../BAAA ABBB ABAA ABAB BBAA ABAA/2</string>
+    <string name="intQ4">What should be the next number ? 19, 23, 29, 31, .../37/1</string>
+    <string name="intQ5">Which animal is different ?/Tiger Snake Elephant Cat Horse Snake/2</string>
+    <string name="intQ6">What should be the next symbol ?/b/3/0,1,2,3,4</string>
+    <string name="intQ7">Which one of the following completes the cube ?/a/3/5,6,7,8,9</string>
+    <string name="intQ8">What should be the next number ? 128, 512, 256, 1024, .../512/1</string>
+    <string name="intQ9">Which word is different ?/level madam stats bored radar bored/2</string>
+    <string name="intQ10">How many letters are there in this picture ?/10/1/10</string>
+    <string name="intQ11">What should be the next image ?/d/3/11,12,13,14,15</string>
+    <string name="intQ12">How can you finish this level as fast as possible ?//1</string>
+    <string name="intQ13">How many triangles are the in this picture ?/21/1/16</string>
+    <string name="intQ14">How many matches you should remove at minimum in order to make the equation true ?/3/1/17</string>
+    <string name="intQ15">When you make a 9 letter word with these letters, what would it be ? GEARTINAN/Animal Vegetable Fruit Country City Country/2</string>
+    <string name="intQ16">Which one can be the view of the cube if you close it ?/c/3/23,24,25,26,27</string>
+    <string name="intQ17">What should be the next image ?/a/3/18,19,20,21,22</string>
+    <string name="intQ18">If cabbage = 5211289, and baugette = 12389669, find cat + tag/1154/1</string>
+    <string name="intQ19">If 8086 = 6, 1228 = 2, 6233 = 1, then what is 7360 ?/2/1</string>
+    <string name="intQ20">What should be the next letter in the following series ? A, Z, E, B , I, Y, O, .../B C Z I X C/2</string>
+    <string name="intQ21">none/none/none</string>
+    <string name="Qtype">Question </string>
+    <string name="time">Time left: </string>
+    <string name="finalmsg">You finished this category. You can play it again to increase your score. Score: </string>
+    <string name="timeUp">Time's up! You should answer all questions in given time.</string>
+
+    <string name="cat1">Intelligence</string>
+    <string name="cat2">Typing test</string>
+    <string name="cat3">Tapping test</string>
+    <string name="cat4">Word memory</string>
+    <string name="cat5">Visual memory</string>
+
+    <string name="line1">High Scores</string>
+    <string name="line2">Intelligence: </string>
+    <string name="line3">Typing test: </string>
+    <string name="line4">Tapping test: </string>
+    <string name="line5">Word memory: </string>
+    <string name="line6">Visual memory: </string>
+
+    <string name="howto">How to play</string>
+    <string name="hwt1">In intelligence, there are 20 questions. You should answer them correctly. You have 600 seconds.</string>
+    <string name="hwt2">In typing test, you should type given words correctly. You have 60 seconds.</string>
+    <string name="hwt3">In tapping test, you should tap the screen as fast as possible. You have 30 seconds.</string>
+    <string name="hwt4">In visual memory, 5 colors will shown respectively. You should memorize and remember them respectively.</string>
+    <string name="hwt5">In word memory, there will be several words in the screen. You should memorize and choose them again.</string>
+
+    <string name="pointText1">You got </string>
+    <string name="pointText2"> points.</string>
+    <string name="visualText3">Question 1: What was the color of the first circle ?</string>
+    <string name="visualText4">Question 2: What was the color of the second circle ?</string>
+    <string name="visualText5">Question 3: What was the color of the third circle ?</string>
+    <string name="visualText6">Question 4: What was the color of the fourth circle ?</string>
+    <string name="visualText7">Question 5: What was the color of the fifth circle ?</string>
+    <string name="timeText1">Time left: </string>
+    <string name="visualText10">Try to memorize all colors.</string>
+    <string name="okText">Ok</string>
+    <string name="wordInfo">Try to memorize all words.</string>
+		 
+  </English>
+ 
+</languages>
