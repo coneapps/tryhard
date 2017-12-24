@@ -33,10 +33,6 @@ public class Introduction : MonoBehaviour {
         StartCoroutine(waitSeconds());
 	}
 
-	void Update () {
-		
-	}
-
 	IEnumerator waitSeconds(){
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("menu");
