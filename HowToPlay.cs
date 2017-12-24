@@ -8,8 +8,6 @@ using UnityEngine.UI;
 /// Created by aliihsan.
 /// </summary>
 
-//TODO:Gerekli arayüzü ekrana çizdir.
-
 public class HowToPlay : MonoBehaviour {
 
     public GameObject title;
