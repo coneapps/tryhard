@@ -8,8 +8,6 @@ using UnityEngine.UI;
 /// Created by aliihsan.
 /// </summary>
 
-//TODO:Statistics scene'ini burda oluştur.
-
 public class Statistics : MonoBehaviour {
     public GameObject message;
     GPGS gpgs = new GPGS();
