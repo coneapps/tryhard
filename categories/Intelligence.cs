@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class Intelligence : MonoBehaviour, IGameScene {
 
 	public GameObject sceneLoaderObject;
-    GPGS gpgs = new GPGS();
+    	GPGS gpgs = new GPGS();
 
     public Intelligence()
     {
